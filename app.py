@@ -12,7 +12,7 @@ def elapsed():
     hours, minutes = divmod(minutes, 60)
     return "%d:%02d:%02d" % (hours, minutes, seconds)
 
-@app.route('/')
+@app.route('/python-application-01')
 def root():
     return "Hello World (Python)! (up %s)\n" % elapsed()
 
